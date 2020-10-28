@@ -32,10 +32,19 @@
     </head>
 
     <body class="antialiased bg-gray-100 dark:bg-gray-900">
-        <div class="relative flex items-top justify-center sm:items-center">
+        <div class="d-none d-sm-block">
+            <div class="relative flex items-top justify-center sm:items-center">
+                <img
+                    src="/images/site_images/transparent_site_logo.png"
+                    style="width:80%"
+                />
+            </div>
+        </div>
+
+        <div class="d-block d-sm-none">
             <img
                 src="/images/site_images/transparent_site_logo.png"
-                style="width:80%"
+                style="width:100%"
             />
         </div>
 
