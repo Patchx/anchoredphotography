@@ -17,137 +17,161 @@
 </head>
 
 <body>
-    <div style="position:relative">
-        <img
-            class="d-none d-sm-block"
-            src="/images/site_images/transparent_site_logo.png"
-            style="
-                position: absolute;
-                z-index: 2;
-                width: 420px;
-                top: 40px;
-                left: 31%;
-            "
-        />
-
-        <img
-            class="d-block d-sm-none"
-            src="/images/site_images/transparent_site_logo.png"
-            style="
-                position: absolute;
-                z-index: 2;
-                width: 380px;
-                top: 40px;
-                left: 10%;
-            "
-        />
-
-        <div
-            class="text-center"
-            style="
-                position: absolute;
-                top: 280px;
-                width: 100%;
-                z-index: 2;
-                color: white;
-                text-shadow: 1px 1px #124562;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: 100;
-                font-size: 20px;
-                padding: 20px;
-            "
-        >
-            <span>
+    <div 
+        id="fh5co-hero-carousel" 
+        class="carousel slide header" 
+        data-ride="carousel"
+    >
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container">
                 <a 
-                    href="#about-us"
-                    style="color:white; text-shadow:1px 1px #124562;"
-                >About</a>
-                &nbsp;&nbsp;&nbsp;
-            </span>
-            
-            <span>
-                <a 
-                    href="#contact"
-                    style="color:white; text-shadow:1px 1px #124562;"
-                >Contact</a>
-                &nbsp;&nbsp;&nbsp;
-            </span>
-            
-            <span>
-                <a 
-                    href="#news"
-                    style="color:white; text-shadow:1px 1px #124562;"
-                >News</a>
-                &nbsp;&nbsp;&nbsp;
-            </span>
-
-            <span>
-                <a 
-                    href="#portfolio"
-                    style="color:white; text-shadow:1px 1px #124562;"
-                >Portfolio</a>
-                &nbsp;&nbsp;&nbsp;
-            </span>
-        </div>
-
-        <div 
-            id="fh5co-hero-carousel" 
-            class="carousel slide header" 
-            style="position:relative;"
-            data-ride="carousel"
-        >
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+                    class="navbar-brand mobile-logo" 
+                    href="#"
+                >
                     <img 
-                        class="d-block w-100 home-bg" 
-                        alt="home-bg" 
-                        src="/images/site_images/home-bg.png"
+                        src="/images/site_images/logo.png" 
+                        alt="Vista Pro"
                     />
-                </div>
+                </a>
 
-                <div class="carousel-item">
-                    <img 
-                        class="d-block w-100 home-bg" 
-                        alt="home-bg" 
-                        src="/images/site_images/img2.png"
-                    />
-                </div>
+                <button 
+                    class="navbar-toggler" 
+                    data-target="#my-nav" 
+                    onclick="myFunction(this)" 
+                    data-toggle="collapse"
+                >
+                    <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
+                </button>
 
-                <div class="carousel-item">
-                    <img 
-                        class="d-block w-100 home-bg" 
-                        alt="home-bg" 
-                        src="/images/site_images/img3.png"
-                    />
-                </div>
+                <div 
+                    id="my-nav" 
+                    class="collapse navbar-collapse"
+                >
+                    <div>
+                        <p class="text-left follow">Follow Us:</p>
 
-                <div class="scroll-button">                
-                    <a href="#about-us" class="page-scroll">
-                        <img 
-                            src="/images/site_images/arrows-down.png" 
-                            alt="arrow down"
-                        />
-                    </a>
+                        <ul class="navbar-nav float-left social-links">
+                            <li class="nav-item">
+                                <a 
+                                    class="nav-link" 
+                                    href="https://facebook.com/AnchoredPhotographybyRachel"
+                                >
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a 
+                                    class="nav-link" 
+                                    href="https://instagram.com/anchoredphotographyFL"
+                                >
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="navbar-nav mx-auto logo-desktop">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <img
+                                    src="/images/site_images/transparent_site_logo.png"
+                                    style="width:170px"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav float-right menu-links">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img 
+                    class="d-block w-100 home-bg" 
+                    alt="home-bg" 
+                    src="/images/site_images/home-bg.png"
+                />
+
+                <div class="carousel-caption d-md-block">
+                    <h5>Today’s SPECIAL MOMENTS.</h5>
+                    <p>Creating a timeless look, coupled with a flawless moment</p>
                 </div>
             </div>
 
-            <ul class="carousel-indicators">
-                <li 
-                    class="active" 
-                    data-target="#fh5co-hero-carousel" 
-                    data-slide-to="0" 
-                    aria-current="location"
-                ></li>
+            <div class="carousel-item">
+                <img 
+                    class="d-block w-100 home-bg" 
+                    alt="home-bg" 
+                    src="/images/site_images/home-bg.png"
+                />
+
+                <div class="carousel-caption d-md-block">
+                    <h5>Today’s SPECIAL MOMENTS.</h5>
+                    <p>Creating a timeless look, coupled with a flawless moment</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img 
+                    class="d-block w-100 home-bg" 
+                    alt="home-bg" 
+                    src="/images/site_images/home-bg.png"
+                />
+
+                <div class="carousel-caption d-md-block">
+                    <h5>Today’s SPECIAL MOMENTS.</h5>
+                    <p>Creating a timeless look, coupled with a flawless moment</p>
+                </div>
+            </div>
+
+            <div class="scroll-button">
+                <p>Scroll down to see more...</p>
                 
-                <li data-target="#fh5co-hero-carousel" data-slide-to="1"></li>
-                <li data-target="#fh5co-hero-carousel" data-slide-to="2"></li>
-            </ul>
+                <a href="#about-us" class="page-scroll">
+                    <img 
+                        src="/images/site_images/arrows-down.png" 
+                        alt="arrow down"
+                    />
+                </a>
+            </div>
         </div>
+
+        <ul class="carousel-indicators">
+            <li 
+                class="active" 
+                data-target="#fh5co-hero-carousel" 
+                data-slide-to="0" 
+                aria-current="location"
+            ></li>
+            
+            <li data-target="#fh5co-hero-carousel" data-slide-to="1"></li>
+            <li data-target="#fh5co-hero-carousel" data-slide-to="2"></li>
+        </ul>
     </div>
 
     <div 
-        id="about-us"
         class="container-fluid fh5co-about-us" 
+        id="about-us"
     >
         <div class="container">
             <div class="row">
@@ -498,59 +522,41 @@
         <div class="container" id="contact">
             <div class="row">
                 <div class="col-lg-5">
-                    <h2>LET'S CHAT!</h2>
-                    
-                    <p>
-                        <span class="email">
-                            <img 
-                                src="/images/site_images/email.png"
-                                alt="email icon"
-                            />
-                        </span>
+                    <h2>CONTACT US TODAY NOW</h2>
 
-                        <b><a href="mailto:anchoredphotographyFL@gmail.com">
-                                anchoredphotographyFL@gmail.com
-                            </a>
-                        </b>
+                    <p class="light">
+                        If you are looking for a Photographer
                     </p>
                     
                     <p>
-                        <span class="phone">
-                            <img 
-                                src="/images/site_images/phone.png" 
-                                alt="phone icon"
-                            />
-                        </span>
-
-                        <b><a href="tel:561-502-9176">
-                            561-502-9176
-                        </a></b>
+                        <span class="email"><img src="/images/site_images/email.png"
+                                alt="email icon" /></span><b>contact@example.com</b>
                     </p>
-                                        
+                    
+                    <p>
+                        <span class="phone"><img src="/images/site_images/phone.png" alt="phone icon" /></span><b>+123-456-7890</b>
+                    </p>
+                    
+                    <h3>We Are Social:</h3>
+                    
                     <ul class="navbar-nav float-left social-links footer-social">
                         <li class="nav-item">
-                            <a 
-                                class="nav-link" 
-                                href="https://facebook.com/AnchoredPhotographybyRachel"
-                            >
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
+                            <a class="nav-link" href="https://www.facebook.com/fh5co"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="https://twitter.com/fh5co"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
                         </li>
 
-                        <li class="nav-item">
-                            <a 
-                                class="nav-link" 
-                                href="https://instagram.com/anchoredphotographyFL"
-                            >
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-7">
                     <div class="form-box">
-                        <h4 style="margin-left:20px">Contact Me</h4>
+                        <h4>What would you like to talk about</h4>
+                        <p>We'd Love to Hear From you !</p>
                         <hr />
 
                         <table class="table table-light table-borderless">

@@ -36,10 +36,6 @@ time, mark, audio, video {
   src: url(../fonts/Larsseit.ttf);
 }
 @font-face {
-  font-family: "Larsseit-Bold";
-  src: url(../fonts/Larsseit-Bold.ttf);
-}
-@font-face {
   font-family: "Larsseit-Light";
   src: url(../fonts/Larsseit-Light.ttf);
 }
@@ -114,7 +110,8 @@ nav.fixed-top {
 }
 .header h5 {
   font-size: 70px;
-  font-family: "Larsseit-Bold";
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
   text-transform: uppercase;
   max-width: 600px;
   margin: 10px auto;
@@ -134,14 +131,14 @@ nav.fixed-top {
   background-color: rgba(255, 255, 255, 0.349);
   display: inline-block;
   list-style-type: none;
-  width: 12px;
+  width: 28px;
   height: 7px;
   border-radius: 10px;
   margin: 0 3px;
   cursor: pointer;
 }
 .header ul.carousel-indicators li.active {
-  width: 35px;
+  width: 33px;
   background: #ffffff;
 }
 @media (max-width: 1199px) {
@@ -312,7 +309,8 @@ nav.fixed-top {
 }
 
 h2 {
-  font-family: "Larsseit-Bold";
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
   font-size: 33px;
   color: #1e1f29;
 }
@@ -822,7 +820,8 @@ footer.fh5co-footer p b {
   font-size: 16px;
 }
 footer.fh5co-footer h3 {
-  font-family: "Larsseit-Bold";
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
   font-size: 33px;
   color: #1e1f29;
   text-transform: uppercase;
@@ -858,7 +857,8 @@ footer.fh5co-footer .social-links li a {
   padding: 50px;
 }
 .form-box h4 {
-  font-family: "Larsseit-Bold";
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
   font-size: 33px;
   color: #1e1f29;
   text-transform: uppercase;
