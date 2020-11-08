@@ -117,7 +117,7 @@ nav.fixed-top {
   color: #ffffff;
 }
 .header ul.carousel-indicators {
-  bottom: 280px;
+  bottom: 100px;
   position: absolute;
   z-index: 55;
 }
@@ -138,12 +138,12 @@ nav.fixed-top {
 }
 @media (max-width: 1199px) {
   .header ul.carousel-indicators {
-    bottom: 200px;
+    bottom: 100px;
   }
 }
 @media (max-width: 738px) {
   .header ul.carousel-indicators {
-    bottom: 110px;
+    bottom: 50px;
   }
 }
 @media (max-width: 1199px) {

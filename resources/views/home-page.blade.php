@@ -119,15 +119,6 @@
                         src="/images/site_images/img3.png"
                     />
                 </div>
-
-                <div class="scroll-button">                
-                    <a href="#about-us" class="page-scroll">
-                        <img 
-                            src="/images/site_images/arrows-down.png" 
-                            alt="arrow down"
-                        />
-                    </a>
-                </div>
             </div>
 
             <ul class="carousel-indicators">
