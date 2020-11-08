@@ -69,12 +69,6 @@ body {
   padding: 100px 0;
 }
 
-h2::before, h2::after, .fh5co-about-us .owl-carousel1 .owl-dots .active span, .read-more, .fh5co-news .owl-carousel2 .owl-dots .active span, .form-box h4::after, .form-box button {
-  background-image: -moz-linear-gradient(0deg, #1270e4 0%, #58c0ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #1270e4 0%, #58c0ff 100%);
-  background-image: -ms-linear-gradient(0deg, #1270e4 0%, #58c0ff 100%);
-}
-
 nav.fixed-top {
   padding-top: 0;
 }
@@ -132,13 +126,14 @@ nav.fixed-top {
   display: inline-block;
   list-style-type: none;
   width: 28px;
-  height: 7px;
+  height: 20px;
   border-radius: 10px;
+  border: 2px solid #477491;
   margin: 0 3px;
   cursor: pointer;
 }
 .header ul.carousel-indicators li.active {
-  width: 33px;
+  width: 36px;
   background: #ffffff;
 }
 @media (max-width: 1199px) {

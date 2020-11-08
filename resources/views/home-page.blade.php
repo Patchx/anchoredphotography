@@ -97,10 +97,11 @@
             data-ride="carousel"
         >
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div 
+                    class="carousel-item active"
+                >
                     <img 
                         class="d-block w-100 home-bg" 
-                        alt="home-bg" 
                         src="/images/site_images/home-bg.png"
                     />
                 </div>
@@ -108,7 +109,6 @@
                 <div class="carousel-item">
                     <img 
                         class="d-block w-100 home-bg" 
-                        alt="home-bg" 
                         src="/images/site_images/img2.png"
                     />
                 </div>
@@ -116,7 +116,6 @@
                 <div class="carousel-item">
                     <img 
                         class="d-block w-100 home-bg" 
-                        alt="home-bg" 
                         src="/images/site_images/img3.png"
                     />
                 </div>
@@ -139,8 +138,15 @@
                     aria-current="location"
                 ></li>
                 
-                <li data-target="#fh5co-hero-carousel" data-slide-to="1"></li>
-                <li data-target="#fh5co-hero-carousel" data-slide-to="2"></li>
+                <li 
+                    data-target="#fh5co-hero-carousel" 
+                    data-slide-to="1"
+                ></li>
+                
+                <li 
+                    data-target="#fh5co-hero-carousel" 
+                    data-slide-to="2"
+                ></li>
             </ul>
         </div>
     </div>
