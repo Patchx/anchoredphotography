@@ -504,41 +504,54 @@
 
                     <div class="col-lg-7">
                         <div class="form-box">
-                            <h4 style="margin-left:20px">Contact Me</h4>
-                            <hr>
+                            <form
+                                action="/contact-form"
+                                method="POST"
+                            >
+                                @csrf
 
-                            <div class="row">
-                                <input 
-                                    type="text" 
-                                    class="form-control" 
-                                    placeholder="Name..."
-                                />
-                            </div>
-                            <br>
+                                <h4>Contact Me</h4>
+                                <hr>
 
-                            <div class="row">
-                                <input
-                                    type="text" 
-                                    class="form-control" 
-                                    placeholder="Email address"
-                                />
-                            </div>
-                            <br>
+                                <div class="row">
+                                    <input 
+                                        type="text" 
+                                        name="name"
+                                        class="form-control" 
+                                        placeholder="Name..."
+                                        required
+                                    />
+                                </div>
+                                <br>
 
-                            <div class="row">
-                                <textarea 
-                                    class="form-control" 
-                                    placeholder="You Message"
-                                /></textarea>
-                            </div>
-                            <br>
+                                <div class="row">
+                                    <input
+                                        type="email" 
+                                        name="email"
+                                        class="form-control" 
+                                        placeholder="Email address"
+                                        required
+                                    />
+                                </div>
+                                <br>
 
-                            <div class="row">
-                                <button 
-                                    type="submit"
-                                    class="btn btn-primary"
-                                >SUBMIT NOW</button>
-                            </div>
+                                <div class="row">
+                                    <textarea 
+                                        name="message"
+                                        class="form-control" 
+                                        placeholder="You Message"
+                                        required
+                                    /></textarea>
+                                </div>
+                                <br>
+
+                                <div class="row">
+                                    <button 
+                                        type="submit"
+                                        class="btn btn-primary"
+                                    >SUBMIT NOW</button>
+                                </div>
+                            </form>                            
                         </div>
                     </div>
                 </div>
@@ -548,7 +561,9 @@
 
     <div class="container-fluid copy">
         <div class="col-lg-12">
-            <p>&copy; 2018 Photogenic. All rights Reserved. Design by <a href="https://freehtml5.co" target="_blank">FreeHTML5.co</a>.</p>
+            <p style="margin-bottom:5px">&copy; 2020 Anchored Photography FL. All rights Reserved.</p>
+
+            <p>Design by <a href="https://www.linkedin.com/in/robertandersonfl/">Rob Anderson</a> and <a href="https://freehtml5.co" target="_blank">FreeHTML5.co</a>.</p>
         </div>
     </div>
 

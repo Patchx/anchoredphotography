@@ -15,4 +15,9 @@ class MiscWebController extends Controller
     {
     	return view('home-page');
     }
+
+    public function postContactForm(Request $request)
+    {
+    	dd($request->all());
+    }
 }
