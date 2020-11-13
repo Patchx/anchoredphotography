@@ -519,6 +519,7 @@
                                         name="name"
                                         class="form-control" 
                                         placeholder="Name..."
+                                        maxlength="100" 
                                         required
                                     />
                                 </div>
@@ -530,6 +531,7 @@
                                         name="email"
                                         class="form-control" 
                                         placeholder="Email address"
+                                        maxlength="100" 
                                         required
                                     />
                                 </div>
@@ -541,6 +543,7 @@
                                         class="form-control" 
                                         placeholder="You Message"
                                         required
+                                        maxlength="255" 
                                     /></textarea>
                                 </div>
                                 <br>
