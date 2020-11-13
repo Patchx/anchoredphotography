@@ -55,11 +55,6 @@ time, mark, audio, video {
   font-family: "segoeui";
   src: url(../fonts/segoeui.ttf);
 }
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1340px;
-  }
-}
 body {
   font-family: "Larsseit";
   color: #aeafb9;
@@ -897,7 +892,7 @@ footer.fh5co-footer .social-links li a {
 }
 @media (max-width: 550px) {
   .form-box {
-    padding: 20px;
+    padding: 30px;
   }
 }
 

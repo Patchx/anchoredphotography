@@ -147,7 +147,7 @@
             <div class="row">
                 <div>
                     <br>
-                    <h2>ABOUT US</h2>
+                    <h2 style="margin-bottom:20px">ABOUT ME</h2>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -169,14 +169,11 @@
 
         <div id="portfolio">
             <div class="row">
-                <h2 style="margin-bottom:20px">OUR PORTFOLIO</h2>
+                <h2 style="margin-bottom:20px">PORTFOLIO</h2>
+            </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad</p>
-
-                <div style="height:40px"></div>
-
-                <h3>FILTER BY:</h3>
+            <div class="row">
+                <h5>FILTER BY:</h5>
                 
                 <div class="portfolio-tab portfolioFilter">
                     <ul>
@@ -386,16 +383,25 @@
             </div>
         </div>
 
-        <div class="container-fluid fh5co-news" id="news">
-            <h2>OUR NEWS</h2>
+        <div 
+            id="news"
+            class="container-fluid fh5co-news" 
+        >
+            <h2>NEWS</h2>
 
             <div class="row">
                 <div class="owl-carousel owl-carousel2 owl-theme">
                     <div>
-                        <div class="card text-center"> <img class="card-img-top" src="/images/site_images/news1.png" alt="">
+                        <div class="card text-center">
+                            <img 
+                                class="card-img-top" 
+                                src="/images/site_images/news1.png" 
+                                alt=""
+                            />
+                            
                             <div class="card-body text-left pr-0 pl-0">
-                                <h5>How to take a Awosome photo Of
-                                    Groups! </h5>
+                                <h5>Article #1</h5>
+
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
@@ -404,10 +410,16 @@
                     </div>
 
                     <div>
-                        <div class="card text-center"> <img class="card-img-top" src="/images/site_images/news2.png" alt="">
+                        <div class="card text-center">
+                            <img 
+                                class="card-img-top" 
+                                src="/images/site_images/news2.png" 
+                                alt=""
+                            />
+                            
                             <div class="card-body text-left pr-0 pl-0">
-                                <h5>How to take a Awosome photo Of
-                                    Groups! </h5>
+                                <h5>Article #2</h5>
+
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
@@ -416,10 +428,16 @@
                     </div>
 
                     <div>
-                        <div class="card text-center"> <img class="card-img-top" src="/images/site_images/news3.png" alt="">
+                        <div class="card text-center">
+                            <img 
+                                class="card-img-top" 
+                                src="/images/site_images/news3.png" 
+                                alt=""
+                            />
+
                             <div class="card-body text-left pr-0 pl-0">
-                                <h5>How to take a Awosome photo Of
-                                    Groups! </h5>
+                                <h5>Article #3</h5>
+
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
@@ -487,30 +505,40 @@
                     <div class="col-lg-7">
                         <div class="form-box">
                             <h4 style="margin-left:20px">Contact Me</h4>
-                            <hr />
+                            <hr>
 
-                            <table class="table table-light table-borderless">
-                                <tr>
-                                    <td><input type="text" class="form-control" placeholder="Name...">
-                                    </td>
+                            <div class="row">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="Name..."
+                                />
+                            </div>
+                            <br>
 
-                                    <td><input type="text" class="form-control" placeholder="Email address">
-                                    </td>
-                                </tr>
+                            <div class="row">
+                                <input
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="Email address"
+                                />
+                            </div>
+                            <br>
 
-                                <tr>
-                                    <td colspan="2"><textarea class="form-control" placeholder="You Message"></textarea>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <button type="submit">
-                                            SUBMIT NOW
-                                        </button>
+                            <div class="row">
+                                <textarea 
+                                    class="form-control" 
+                                    placeholder="You Message"
+                                /></textarea>
+                            </div>
+                            <br>
 
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="row">
+                                <button 
+                                    type="submit"
+                                    class="btn btn-primary"
+                                >SUBMIT NOW</button>
+                            </div>
                         </div>
                     </div>
                 </div>
