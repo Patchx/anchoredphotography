@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\ContactForm;
+use Mail;
+
+use App\Mail\SendContactFormEmail;
 
 class MiscWebController extends Controller
 {
@@ -24,14 +26,16 @@ class MiscWebController extends Controller
     }
 
     public function postContactForm(Request $request)
-    {
-    	$form = ContactForm::create([
-    		'name' => $request->name,
-    		'email' => $request->email,
-    		'message' => $request->message,
-    	]);
+    {        
+        $contact_form_email = new SendContactFormEmail([
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message,
+        ]);
 
-    	// Need to actually send the email
+    	Mail::to('anchoredphotographyFL@gmail.com')
+                ->bcc('robert.anderson.fl@gmail.com')
+                ->send($contact_form_email);
 
     	return redirect()->to('/contact-form-confirmation');
     }
