@@ -222,148 +222,33 @@
             <div class="row">
                 <div class="portfolioContainer">
                     <div class="gallary building nature green">
-                        <img src="/images/site_images/img1.png" alt="">
-
-                        <div class="card-img-overlay">
-                            <div class="top-buttons clearfix">
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/share.png"
-                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/heart.png"
-                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
-                            </div>
-
-                            <div class="top-buttons bottom-buttons clearfix">
-                                <a href="#"><span class="txt">Contact Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/eye.png" alt="share icon" /></span>
-                                    <span class="txt">Full View</span></a>
-                            </div>
-                        </div>
+                        <img src="/images/site_images/img1.png">
                     </div>
 
                     <div class="gallary center-img wedding">
-                        <img src="/images/site_images/img2.png" class="half-height" alt="">
-                        <div class="card-img-overlay">
-                            <div class="top-buttons clearfix">
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/share.png"
-                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/heart.png"
-                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
-                            </div>
-
-                            <div class="top-buttons bottom-buttons clearfix">
-                                <a href="#"><span class="txt">Contact Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/eye.png" alt="share icon" /></span>
-                                    <span class="txt">Full View</span></a>
-                            </div>
-                        </div>
+                        <img src="/images/site_images/img2.png" class="half-height">
                     </div>
 
                     <div class="gallary building">
-
                         <img src="/images/site_images/img4.png" alt="">
-                        <div class="card-img-overlay">
-                            <div class="top-buttons clearfix">
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/share.png"
-                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/heart.png"
-                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
-                            </div>
-
-                            <div class="top-buttons bottom-buttons clearfix">
-                                <a href="#"><span class="txt">Contact Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/eye.png" alt="share icon" /></span>
-                                    <span class="txt">Full View</span></a>
-                            </div>
-                        </div>
                     </div>
+
                     <div class="gallary center-img landscape nature">
                         <img src="/images/site_images/img3.png" class="half-height" alt="">
-                        <div class="card-img-overlay">
-                            <div class="top-buttons clearfix">
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/share.png"
-                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/heart.png"
-                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
-                            </div>
-
-                            <div class="top-buttons bottom-buttons clearfix">
-                                <a href="#"><span class="txt">Contact Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/eye.png" alt="share icon" /></span>
-                                    <span class="txt">Full View</span></a>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="gallary">
                         <img src="/images/site_images/img5.png" alt="">
-                        <div class="card-img-overlay">
-                            <div class="top-buttons clearfix">
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/share.png"
-                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/heart.png"
-                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
-                            </div>
-
-                            <div class="top-buttons bottom-buttons clearfix">
-                                <a href="#"><span class="txt">Contact Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/eye.png" alt="share icon" /></span>
-                                    <span class="txt">Full View</span></a>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="gallary center-img landscape">
                         <img src="/images/site_images/img6.png" alt="">
-
-                        <div class="card-img-overlay">
-                            <div class="top-buttons clearfix">
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/share.png"
-                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/heart.png"
-                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
-                            </div>
-
-                            <div class="top-buttons bottom-buttons clearfix">
-                                <a href="#"><span class="txt">Contact Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/eye.png" alt="share icon" /></span>
-                                    <span class="txt">Full View</span></a>
-                            </div>
-                        </div>
                     </div>
 
 
                     <div class="gallary building nature">
                         <img src="/images/site_images/img4.png" alt="">
-                        <div class="card-img-overlay">
-                            <div class="top-buttons clearfix">
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/share.png"
-                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/heart.png"
-                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
-                            </div>
-
-                            <div class="top-buttons bottom-buttons clearfix">
-                                <a href="#"><span class="txt">Contact Now</span></a>
-
-                                <a href="#"><span class="img-icon"><img src="/images/site_images/eye.png" alt="share icon" /></span>
-                                    <span class="txt">Full View</span></a>
-                            </div>
-                        </div>
                     </div>
-
                 </div>
             </div>
 
