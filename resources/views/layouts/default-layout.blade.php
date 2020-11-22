@@ -15,6 +15,14 @@
 
 <body>
     <style>
+        .content-section {
+            padding: 50px;
+        }
+
+        .content-section p {
+            font-size: 20px;
+        }
+
         .header {
             background-color: #0069D9;
             padding: 20px;
@@ -37,7 +45,7 @@
             </div>
         </div>
         
-        <div style="padding: 50px">
+        <div class="content-section">
             @yield('content', 'Yield Content')
         </div>
     </div>
