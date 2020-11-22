@@ -21,3 +21,9 @@ Route::get('/', 'MiscWebController@getIndex');
 Route::get('/1', 'MiscWebController@get1');
 Route::post('/contact-form', 'MiscWebController@postContactForm');
 Route::get('/contact-form-confirmation', 'MiscWebController@getContactFormConfirmation');
+
+// --------------------------------
+// - CalendarWebController routes -
+// --------------------------------
+
+Route::get('/calendar/test', 'CalendarWebController@getTest');
