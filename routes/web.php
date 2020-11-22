@@ -27,3 +27,6 @@ Route::get('/contact-form-confirmation', 'MiscWebController@getContactFormConfir
 // --------------------------------
 
 Route::get('/calendar/test', 'CalendarWebController@getTest');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return Inertia\Inertia::render('Dashboard');
+})->name('dashboard');
