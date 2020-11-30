@@ -38,7 +38,13 @@
         <div>
             <div class="header">
                 <div class="col-12">
-                    <a href="/1">Anchored Photography</a>
+                    <a 
+                        @guest
+                            href="/1"
+                        @else
+                            href="/dashboard"
+                        @endguest
+                    >Anchored Photography</a>
 
                     <div class="float-right">
                         @guest

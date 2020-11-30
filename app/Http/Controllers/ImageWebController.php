@@ -43,6 +43,11 @@ class ImageWebController extends Controller
     	return view('file-summary', $data);
     }
 
+    public function getTest()
+    {
+        return view('image-test');
+    }
+
     // Need to not hardcode jpegs
     // --
     public function postMakeFile(Request $request)

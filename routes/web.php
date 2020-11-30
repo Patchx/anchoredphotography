@@ -34,10 +34,12 @@ Route::get('/calendar/test', 'CalendarWebController@getTest');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'DashboardWebController@getDashboard')->name('dashboard');
 
-// --------------------------------
+// -----------------------------
 // - ImageWebController routes -
-// --------------------------------
+// -----------------------------
 
-Route::get('/i/{file}', 'ImageWebController@getFile');
 Route::post('/i/make-file', 'ImageWebController@postMakeFile');
 Route::get('/i/summary/{file_id}', 'ImageWebController@getFileSummary');
+Route::get('/i/test', 'ImageWebController@getTest');
+Route::get('/i/{file}', 'ImageWebController@getFile');
+
