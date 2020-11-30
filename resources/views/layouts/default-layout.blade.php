@@ -38,11 +38,30 @@
         <div>
             <div class="header">
                 <div class="col-12">
-                    <p>
-                        <a href="/1">Anchored Photography</a>
-                    </p>
+                    <a href="/1">Anchored Photography</a>
+
+                    <div class="float-right">
+                        @guest
+                            <a href="/login">Log In</a>
+                        @else
+                            <button 
+                                type="submit"
+                                form="logout-form"
+                                class="btn btn-link"
+                                style="padding:0px"
+                            >Log Out</button>
+                        @endif
+                    </div>
                 </div>
             </div>
+
+            <form
+                id="logout-form"
+                method="POST"
+                action="/logout"
+            >
+                @csrf
+            </form>
         </div>
         
         <div class="content-section">

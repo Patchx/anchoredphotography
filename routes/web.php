@@ -36,3 +36,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 // --------------------------------
 
 Route::get('/i/{file}', 'ImageWebController@getFile');
+Route::post('/i/make-file', 'ImageWebController@postMakeFile');
