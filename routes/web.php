@@ -27,13 +27,17 @@ Route::get('/contact-form-confirmation', 'MiscWebController@getContactFormConfir
 // --------------------------------
 
 Route::get('/calendar/test', 'CalendarWebController@getTest');
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia\Inertia::render('Dashboard');
-})->name('dashboard');
+
+// ---------------------------------
+// - DashboardWebController routes -
+// ---------------------------------
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'DashboardWebController@getDashboard')->name('dashboard');
 
 // --------------------------------
-// - CalendarWebController routes -
+// - ImageWebController routes -
 // --------------------------------
 
 Route::get('/i/{file}', 'ImageWebController@getFile');
 Route::post('/i/make-file', 'ImageWebController@postMakeFile');
+Route::get('/i/summary/{file_id}', 'ImageWebController@getFileSummary');
