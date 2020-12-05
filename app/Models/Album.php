@@ -17,4 +17,30 @@ class Album extends AbstractModel
         'custom_id',
         'name',
     ];
+
+    // -----------------
+    // - Relationships -
+    // -----------------
+
+    public function images()
+    {
+    	return Image::where('album_id', $this->custom_id)->get();
+    }
+
+    // --------------------
+    // - Parent Overrides -
+    // --------------------
+
+    public function delete()
+    {
+    	$images = $this->images();
+
+    	// Need to hydrate all these models so that actual server-file deletion takes place
+    	// --
+    	foreach ($images as $image) {
+    		$image->delete();
+    	}
+
+        parent::delete();
+    }
 }

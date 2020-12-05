@@ -17,6 +17,7 @@ class Image extends AbstractModel
         'custom_id',
         'is_private',
         'file_type',
+        'album_id',
     ];
 
     // --------------------
@@ -31,5 +32,14 @@ class Image extends AbstractModel
         unlink($path);
 
         parent::delete();
+    }
+
+    // ------------------
+    // - Public Methods -
+    // ------------------
+
+    public function link()
+    {
+        return '/i/' . $this->custom_id;
     }
 }

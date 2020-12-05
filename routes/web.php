@@ -34,6 +34,15 @@ Route::middleware(['admins-only'])->group(function() {
 	Route::get('/admin/album/{album_id}', 'AdminAlbumWebController@getAlbum'); // Make sure it's last in list
 });
 
+// ---------------------------
+// - AdminImageWebController -
+// ---------------------------
+
+Route::middleware(['admins-only'])->group(function() {
+	Route::get('/admin/i/summary/{file_id}', 'AdminImageWebController@getFileSummary');
+	Route::post('/admin/i/make-file', 'AdminImageWebController@postMakeFile');
+});
+
 // --------------------------------
 // - CalendarWebController routes -
 // --------------------------------
@@ -50,9 +59,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'DashboardWeb
 // - ImageWebController routes -
 // -----------------------------
 
-Route::post('/i/make-file', 'ImageWebController@postMakeFile');
-Route::get('/i/summary/{file_id}', 'ImageWebController@getFileSummary');
 Route::post('/i/delete/{file}', 'ImageWebController@postDeleteFile');
-Route::get('/i/test', 'ImageWebController@getTest');
 Route::get('/i/{file}', 'ImageWebController@getFile'); // Make sure it's last in list
 

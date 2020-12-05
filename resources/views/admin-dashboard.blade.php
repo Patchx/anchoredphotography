@@ -15,15 +15,6 @@
 @endif
 
 <a 
-	href="/i/test"
-	class="text-center"
->
-	<h4>Image Upload Tester</h4>
-</a>
-
-<br>
-
-<a 
 	href="/admin/album/create"
 	class="text-center"
 >

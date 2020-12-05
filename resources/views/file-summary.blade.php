@@ -3,9 +3,16 @@
 @section('content')
 
 <div class="text-center">
+	<a 
+		href="/admin/album/{{$image->album_id}}"
+		class="btn btn-link"
+	>Back to Album</a>
+
+	<br><br>
+
 	<form
 		method="POST"
-		action="/i/delete/{{$file_id}}"
+		action="/i/delete/{{$image->custom_id}}"
 	>
 		@csrf
 		<button
@@ -19,7 +26,7 @@
 <img
 	class="mx-auto d-block"
 	style="max-width:450px"
-	src="/i/{{$file_id}}"
+	src="/i/{{$image->custom_id}}"
 >
 
 @endsection

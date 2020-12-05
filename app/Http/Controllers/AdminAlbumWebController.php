@@ -17,6 +17,7 @@ class AdminAlbumWebController extends Controller
 
 		$data = [
 			'album' => $album,
+            'images' => $album->images(),
 		];
 
 		return view('admins.view-album', $data);
