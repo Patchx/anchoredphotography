@@ -5,6 +5,15 @@
 
 <br>
 
+@if(session()->has('msg_success'))
+    <p 
+    	class="alert alert-success text-center mx-auto"
+    	style="max-width:250px"
+    >{{session('msg_success')}}</p>
+
+    <br>
+@endif
+
 <a 
 	href="/i/test"
 	class="text-center"
@@ -15,7 +24,7 @@
 <br>
 
 <a 
-	href="/i/test"
+	href="/admin/album/create"
 	class="text-center"
 >
 	<h4>Create Album</h4>
@@ -35,7 +44,7 @@
 	@if(session()->has('search_text_failure'))
 		<p 
 			class="alert alert-danger text-center mx-auto"
-			style="max-width:250px"
+			style="max-width:300px"
 		>{{session('search_text_failure')}}</p>
 	@endif
 
