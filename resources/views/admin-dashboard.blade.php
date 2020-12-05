@@ -12,4 +12,53 @@
 	<h4>Image Upload Tester</h4>
 </a>
 
+<br>
+
+<a 
+	href="/i/test"
+	class="text-center"
+>
+	<h4>Create Album</h4>
+</a>
+
+<br>
+
+<div 
+	class="text-center mx-auto"
+	style="max-width:300px"
+>
+	<h4 
+		class="text-dark"
+		style="margin-bottom:10px"
+	>Search Albums</h4>
+
+	@if(session()->has('search_text_failure'))
+		<p 
+			class="alert alert-danger text-center mx-auto"
+			style="max-width:250px"
+		>{{session('search_text_failure')}}</p>
+	@endif
+
+	<form
+		method="POST"
+		action="/admin/album/search"
+	>
+		@csrf
+		<div class="input-group">
+			<input 
+				name="search_text"
+				class="form-control d-inline-block"
+				style="max-width:260px"
+			/>
+
+			<div class="input-group-append">
+				<button
+					type="submit"
+					class="btn btn-primary d-inline-block"
+				>Go</button>
+			</div>
+		</div>
+	</form>
+</div>
+
 @endsection

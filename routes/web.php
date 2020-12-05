@@ -22,6 +22,12 @@ Route::get('/1', 'MiscWebController@get1');
 Route::post('/contact-form', 'MiscWebController@postContactForm');
 Route::get('/contact-form-confirmation', 'MiscWebController@getContactFormConfirmation');
 
+// ----------------------------------
+// - AdminAlbumWebController routes -
+// ----------------------------------
+
+Route::post('/admin/album/search', 'AdminAlbumWebController@postAlbumSearch');
+
 // --------------------------------
 // - CalendarWebController routes -
 // --------------------------------
