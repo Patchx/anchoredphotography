@@ -36,7 +36,17 @@ class AdminAlbumWebController extends Controller
 			);
 		}
 
-		dd('Work in progress');
+        $album = Album::where(
+            'name', 'like', '%' . $request->search_text . '%'
+        )->first();
+
+        if ($album === null) {
+            return redirect()->back()->with(
+                'search_text_failure', "Album not found"
+            );
+        }
+
+        return redirect()->to('/admin/album/' . $album->custom_id);
     }
 
     public function postCreateAlbum(Request $request)
