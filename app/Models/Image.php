@@ -16,5 +16,6 @@ class Image extends AbstractModel
     protected $fillable = [
         'custom_id',
         'is_private',
+        'file_type',
     ];
 }

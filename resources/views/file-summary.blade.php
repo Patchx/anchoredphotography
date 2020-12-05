@@ -6,7 +6,7 @@
 <br>
 
 <img
-	class="mx-auto"
+	class="mx-auto d-block"
 	src="/i/{{$file_id}}"
 >
 

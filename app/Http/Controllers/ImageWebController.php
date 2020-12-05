@@ -10,8 +10,6 @@ use App\Models\Image;
 
 class ImageWebController extends Controller
 {
-	// Need to not hardcode jpegs
-	// 
     public function getFile($file_id)
     {
     	$image = Image::where('custom_id', $file_id)->first();
@@ -25,10 +23,11 @@ class ImageWebController extends Controller
     		}
     	}
 
-    	$path = storage_path("app/uploads/{$file_id}.jpeg");
+        $extension = $image->file_type;
+    	$path = storage_path("app/uploads/{$file_id}.{$extension}");
 
     	if (file_exists($path)) {
-    		return response()->file($path, ['Content-Type' => 'image/jpeg']);
+    		return response()->file($path, ['Content-Type' => "image/{$extension}"]);
     	}
     	
     	abort(404);
@@ -48,8 +47,6 @@ class ImageWebController extends Controller
         return view('image-test');
     }
 
-    // Need to not hardcode jpegs
-    // --
     public function postMakeFile(Request $request)
     {
     	$user = Auth::user();
@@ -62,9 +59,15 @@ class ImageWebController extends Controller
     		$request->is_private = 0;
     	}
 
-    	$file = Image::create(['is_private' => $request->is_private]);
-    	$file_id = $file->custom_id;    	
-    	$request->file->storeAs('uploads', "{$file_id}.jpeg");
+        $extension = $request->file->extension();
+    	
+        $file = Image::create([
+            'file_type' => $extension,
+            'is_private' => $request->is_private
+        ]);
+    	
+        $file_id = $file->custom_id;   
+    	$request->file->storeAs('uploads', "{$file_id}.{$extension}");
 
     	return redirect()->to("/i/summary/{$file_id}");
     }
