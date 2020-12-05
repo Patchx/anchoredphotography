@@ -18,4 +18,18 @@ class Image extends AbstractModel
         'is_private',
         'file_type',
     ];
+
+    // --------------------
+    // - Parent Overrides -
+    // --------------------
+
+    public function delete()
+    {
+        $extension = $this->file_type;
+        $file_id = $this->custom_id;
+        $path = storage_path("app/uploads/{$file_id}.{$extension}");
+        unlink($path);
+
+        parent::delete();
+    }
 }

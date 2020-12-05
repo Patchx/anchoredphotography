@@ -1,12 +1,24 @@
 @extends('layouts.default-layout')
 
 @section('content')
-<h1 class="text-center">File {{$file_id}}:</h1>
+
+<div class="text-center">
+	<form
+		method="POST"
+		action="/i/delete/{{$file_id}}"
+	>
+		@csrf
+		<button
+			class="btn btn-danger"
+		>Delete File</button>
+	</form>
+</div>
 
 <br>
 
 <img
 	class="mx-auto d-block"
+	style="max-width:450px"
 	src="/i/{{$file_id}}"
 >
 

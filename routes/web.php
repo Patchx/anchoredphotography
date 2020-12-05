@@ -40,6 +40,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'DashboardWeb
 
 Route::post('/i/make-file', 'ImageWebController@postMakeFile');
 Route::get('/i/summary/{file_id}', 'ImageWebController@getFileSummary');
+Route::post('/i/delete/{file}', 'ImageWebController@postDeleteFile');
 Route::get('/i/test', 'ImageWebController@getTest');
-Route::get('/i/{file}', 'ImageWebController@getFile');
+Route::get('/i/{file}', 'ImageWebController@getFile'); // Make sure it's last in list
 

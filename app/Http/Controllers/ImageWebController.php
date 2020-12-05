@@ -35,6 +35,9 @@ class ImageWebController extends Controller
 
     public function getFileSummary($file_id)
     {
+        $image = Image::where('custom_id', $file_id)->first();
+        if ($image === null) {abort(404);}
+
     	$data = [
     		'file_id' => $file_id,
     	];
@@ -47,6 +50,27 @@ class ImageWebController extends Controller
         return view('image-test');
     }
 
+    public function postDeleteFile(
+        Request $request,
+        $file_id
+    ) {
+        $user = Auth::user();
+
+        if ($user === null || $user->role !== 'admin') {
+            abort(403);
+        }
+
+        $image = Image::where('custom_id', $file_id)->first();
+        if ($image === null) {abort(404);}
+
+        $image->delete();
+        
+        // WIP
+        return redirect()->to('/i/test')->with(
+            'msg_success', "Image Deleted Successfully"
+        );
+    }
+
     public function postMakeFile(Request $request)
     {
     	$user = Auth::user();
@@ -54,6 +78,12 @@ class ImageWebController extends Controller
     	if ($user === null || $user->role !== 'admin') {
     		abort(403);
     	}
+
+        if ($request->file === null) {
+            return redirect()->back()->with(
+                'msg_failure', "No file submitted"
+            );
+        }
 
     	if ($request->is_private === null) {
     		$request->is_private = 0;
