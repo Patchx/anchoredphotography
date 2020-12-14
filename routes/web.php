@@ -47,6 +47,7 @@ Route::middleware(['admins-only'])->group(function() {
 // - CalendarWebController routes -
 // --------------------------------
 
+Route::get('/calendar/schedule', 'CalendarWebController@getSchedule');
 Route::get('/calendar/test', 'CalendarWebController@getTest');
 
 // ---------------------------------
