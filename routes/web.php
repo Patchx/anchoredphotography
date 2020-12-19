@@ -30,6 +30,7 @@ Route::middleware(['admins-only'])->group(function() {
 	Route::get('/admin/album/create', 'AdminAlbumWebController@getCreateAlbum');
 	Route::post('/admin/album/create', 'AdminAlbumWebController@postCreateAlbum');
 	Route::post('/admin/album/delete/{album_id}', 'AdminAlbumWebController@postDeleteAlbum');
+	Route::get('/admin/album/search', 'AdminAlbumWebController@getAlbumSearch');
 	Route::post('/admin/album/search', 'AdminAlbumWebController@postAlbumSearch');
 	Route::get('/admin/album/{album_id}', 'AdminAlbumWebController@getAlbum'); // Make sure it's last in list
 });

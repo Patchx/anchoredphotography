@@ -23,6 +23,29 @@ class AdminAlbumWebController extends Controller
 		return view('admins.view-album', $data);
 	}
 
+    public function getAlbumSearch(Request $request)
+    {
+        if ($request->search === null) {
+            return redirect()->to('/dashboard');
+        }
+
+        $albums = Album::where(
+            'name', 'like', '%' . $request->search . '%'
+        )->get();
+
+        if ($albums->count() < 1) {
+            return redirect()->to('/dashboard');
+        } elseif ($albums->count() === 1) {
+            return redirect()->to('/admin/album/' . $albums->first()->custom_id);
+        }
+
+        $data = [
+            'albums' => $albums,
+        ];
+
+        return view('admins.album-search', $data);
+    }
+
 	public function getCreateAlbum()
 	{
 		return view('admins.create-album');
@@ -36,17 +59,20 @@ class AdminAlbumWebController extends Controller
 			);
 		}
 
-        $album = Album::where(
+        $albums = Album::where(
             'name', 'like', '%' . $request->search_text . '%'
-        )->first();
+        )->get();
 
-        if ($album === null) {
+        if ($albums->count() < 1) {
             return redirect()->back()->with(
                 'search_text_failure', "Album not found"
             );
+        } elseif ($albums->count() === 1) {
+            return redirect()->to('/admin/album/' . $albums->first()->custom_id);
+        } else {
+            $query = urlencode($request->search_text);
+            return redirect()->to('/admin/album/search?search=' . $query);
         }
-
-        return redirect()->to('/admin/album/' . $album->custom_id);
     }
 
     public function postCreateAlbum(Request $request)
