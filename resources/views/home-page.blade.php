@@ -18,35 +18,11 @@
 
 <body>
     <div style="position:relative">
-        <img
-            class="d-none d-sm-block"
-            src="/images/site_images/anchored_photography_white_outline_logo.png"
-            style="
-                position: absolute;
-                z-index: 2;
-                width: 420px;
-                top: 40px;
-                left: 31%;
-            "
-        />
-
-        <img
-            class="d-block d-sm-none"
-            src="/images/site_images/anchored_photography_white_outline_logo.png"
-            style="
-                position: absolute;
-                z-index: 2;
-                width: 380px;
-                top: 40px;
-                left: 10%;
-            "
-        />
-
         <div
             class="text-center"
             style="
                 position: absolute;
-                top: 280px;
+                top: 0px;
                 width: 100%;
                 z-index: 2;
                 color: white;
@@ -57,6 +33,15 @@
                 padding: 20px;
             "
         >
+            <div>
+                <img
+                    src="/images/site_images/anchored_photography_white_outline_logo.png"
+                    style="
+                        width: 100%;
+                    "
+                />
+            </div>
+
             <span>
                 <a 
                     href="#about-us"
@@ -88,6 +73,44 @@
                 >Portfolio</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
+
+            <div style="height:20px"></div>
+
+            <div>
+                <ul class="carousel-indicators">
+                    <li 
+                        class="active" 
+                        data-target="#fh5co-hero-carousel" 
+                        data-slide-to="0" 
+                        style="
+                            height:20px; 
+                            border: 2px solid gray;
+                            border-radius: 20px;
+                        "
+                        aria-current="location"
+                    ></li>
+                    
+                    <li 
+                        style="
+                            height:20px; 
+                            border: 2px solid gray;
+                            border-radius: 20px;
+                        "
+                        data-target="#fh5co-hero-carousel" 
+                        data-slide-to="1"
+                    ></li>
+                    
+                    <li 
+                        style="
+                            height:20px; 
+                            border: 2px solid gray;
+                            border-radius: 20px;
+                        "
+                        data-target="#fh5co-hero-carousel" 
+                        data-slide-to="2"
+                    ></li>
+                </ul>
+            </div>
         </div>
 
         <div 
@@ -120,25 +143,6 @@
                     />
                 </div>
             </div>
-
-            <ul class="carousel-indicators">
-                <li 
-                    class="active" 
-                    data-target="#fh5co-hero-carousel" 
-                    data-slide-to="0" 
-                    aria-current="location"
-                ></li>
-                
-                <li 
-                    data-target="#fh5co-hero-carousel" 
-                    data-slide-to="1"
-                ></li>
-                
-                <li 
-                    data-target="#fh5co-hero-carousel" 
-                    data-slide-to="2"
-                ></li>
-            </ul>
         </div>
     </div>
 

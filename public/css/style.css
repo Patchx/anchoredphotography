@@ -121,7 +121,7 @@ nav.fixed-top {
   display: inline-block;
   list-style-type: none;
   width: 28px;
-  height: 20px;
+  height: 20px !important;
   border-radius: 10px;
   border: 2px solid #477491;
   margin: 0 3px;
