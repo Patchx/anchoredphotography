@@ -20,7 +20,7 @@
     <div style="position:relative">
         <img
             class="d-none d-sm-block"
-            src="/images/site_images/transparent_site_logo.png"
+            src="/images/site_images/anchored_photography_white_outline_logo.png"
             style="
                 position: absolute;
                 z-index: 2;
@@ -32,7 +32,7 @@
 
         <img
             class="d-block d-sm-none"
-            src="/images/site_images/transparent_site_logo.png"
+            src="/images/site_images/anchored_photography_white_outline_logo.png"
             style="
                 position: absolute;
                 z-index: 2;

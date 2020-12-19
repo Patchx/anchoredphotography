@@ -35,7 +35,7 @@
         <div class="d-none d-sm-block">
             <div class="relative flex items-top justify-center sm:items-center">
                 <img
-                    src="/images/site_images/transparent_site_logo.png"
+                    src="/images/site_images/anchored_photography_white_outline_logo.png"
                     style="width:80%"
                 />
             </div>
@@ -43,7 +43,7 @@
 
         <div class="d-block d-sm-none">
             <img
-                src="/images/site_images/transparent_site_logo.png"
+                src="/images/site_images/anchored_photography_white_outline_logo.png"
                 style="width:100%"
             />
         </div>
