@@ -12,40 +12,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ mix('/wp/css/homepage.css') }}">
+    <link rel="stylesheet" href="{{ mix('/wp/css/homepage.css') }}">
 
     <title>Anchored Photography</title>
 </head>
 
 <body>
-    <div style="position:relative">
+    <div>
         <div
+            id="homepage-top-banner"
             class="text-center"
-            style="
-                position: absolute;
-                top: 0px;
-                width: 100%;
-                z-index: 2;
-                color: white;
-                text-shadow: 1px 1px #124562;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: 100;
-                font-size: 20px;
-                padding: 20px;
-            "
         >
-            <div>
-                <img
-                    src="/images/site_images/anchored_photography_white_outline_logo.png"
-                    style="
-                        width: 100%;
-                    "
-                />
-            </div>
-
             <span>
                 <a 
                     href="#about-us"
-                    style="color:white; text-shadow:1px 1px #124562;"
                 >About</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
@@ -53,15 +34,19 @@
             <span>
                 <a 
                     href="#contact"
-                    style="color:white; text-shadow:1px 1px #124562;"
                 >Contact</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
             
+            <img
+                src="/images/site_images/anchored_photography_white_outline_logo.png"
+                class="d-inline-block"
+                style="width: 180px"
+            />
+
             <span>
                 <a 
                     href="#news"
-                    style="color:white; text-shadow:1px 1px #124562;"
                 >News</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
@@ -69,79 +54,40 @@
             <span>
                 <a 
                     href="#portfolio"
-                    style="color:white; text-shadow:1px 1px #124562;"
                 >Portfolio</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
-
-            <div style="height:20px"></div>
-
-            <div>
-                <ul class="carousel-indicators">
-                    <li 
-                        class="active" 
-                        data-target="#fh5co-hero-carousel" 
-                        data-slide-to="0" 
-                        style="
-                            height:20px; 
-                            border: 2px solid gray;
-                            border-radius: 20px;
-                        "
-                        aria-current="location"
-                    ></li>
-                    
-                    <li 
-                        style="
-                            height:20px; 
-                            border: 2px solid gray;
-                            border-radius: 20px;
-                        "
-                        data-target="#fh5co-hero-carousel" 
-                        data-slide-to="1"
-                    ></li>
-                    
-                    <li 
-                        style="
-                            height:20px; 
-                            border: 2px solid gray;
-                            border-radius: 20px;
-                        "
-                        data-target="#fh5co-hero-carousel" 
-                        data-slide-to="2"
-                    ></li>
-                </ul>
-            </div>
         </div>
+    </div>
 
-        <div 
-            id="fh5co-hero-carousel" 
-            class="carousel slide header" 
-            style="position:relative;"
-            data-ride="carousel"
-        >
-            <div class="carousel-inner">
-                <div 
-                    class="carousel-item active"
-                >
-                    <img 
-                        class="d-block w-100 home-bg" 
-                        src="/images/site_images/home-bg.png"
-                    />
-                </div>
+    <div 
+        id="fh5co-hero-carousel" 
+        class="carousel slide header" 
+        style="position:relative;"
+        data-ride="carousel"
+    >
+        <div class="carousel-inner">
+            <div 
+                class="carousel-item active"
+            >
+                <img 
+                    class="d-block w-100 home-bg" 
+                    src="/images/site_images/home-bg.png"
+                />
+            </div>
 
-                <div class="carousel-item">
-                    <img 
-                        class="d-block w-100 home-bg" 
-                        src="/images/site_images/img2.png"
-                    />
-                </div>
+            <div class="carousel-item">
+                <img 
+                    class="d-block w-100 home-bg" 
+                    src="/images/site_images/img2.png"
+                />
+            </div>
 
-                <div class="carousel-item">
-                    <img 
-                        class="d-block w-100 home-bg" 
-                        src="/images/site_images/img3.png"
-                    />
-                </div>
+            <div class="carousel-item">
+                <img 
+                    class="d-block w-100 home-bg" 
+                    src="/images/site_images/img3.png"
+                />
             </div>
         </div>
     </div>
