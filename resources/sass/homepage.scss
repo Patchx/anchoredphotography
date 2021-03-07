@@ -1,3 +1,12 @@
+#footer {
+	background-color: #d9e2e1;
+	padding: 20px 20px 30px 20px;
+}
+
+#footer p {
+	color: rgba(79, 79, 79, 0.91);
+}
+
 #homepage-top-banner {
 	font-family: Montserrat,Arial,Helvetica,sans-serif;
 	font-size: 14px;
@@ -16,4 +25,17 @@
 		padding-left: 2px;
 		padding-right: 2px;
 	}
+}
+
+h2.heading {
+	font-family: Garamond; 
+	color: rgba(79,79,79,.91);
+}
+
+p.paragraph {
+	font-family: Garamond; 
+	color: rgba(79,79,79,.91);
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 30px;
 }
