@@ -11,15 +11,24 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ mix('/wp/css/app.css') }}">
     <link rel="stylesheet" href="{{ mix('/wp/css/homepage.css') }}">
-    <link rel="stylesheet" href="{{ mix('/wp/css/homepage.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@400;700&family=Raleway:wght@300;400&family=Rubik:wght@300;400;500">
 
     <title>Anchored Photography</title>
 </head>
 
 <body>
     <div>
+        <img
+            src="/images/site_images/anchored_photography_white_outline_logo.png"
+            class="d-block d-md-none ml-10 mr-10 mx-auto"
+            style="width: 180px"
+        />
+
         <div
             id="homepage-top-banner"
             class="text-center"
@@ -27,34 +36,34 @@
             <span>
                 <a 
                     href="#about-us"
-                >About</a>
+                >ABOUT</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
             
             <span>
                 <a 
                     href="#contact"
-                >Contact</a>
+                >CONTACT</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
             
             <img
                 src="/images/site_images/anchored_photography_white_outline_logo.png"
-                class="d-inline-block"
+                class="d-none d-md-inline-block ml-20 mr-20"
                 style="width: 180px"
             />
 
             <span>
                 <a 
                     href="#news"
-                >News</a>
+                >NEWS</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
 
             <span>
                 <a 
                     href="#portfolio"
-                >Portfolio</a>
+                >PORTFOLIO</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
         </div>

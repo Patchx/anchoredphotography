@@ -1,10 +1,18 @@
 #homepage-top-banner {
 	top: 0px;
-	font-family: 'Times New Roman', Times, serif;
-	font-size: 20px;
-	padding: 20px;
+	font-size: 14px;
+	padding: 10px;
+	font-family: Montserrat,Arial,Helvetica,sans-serif;
+	font-weight: 400;
 }
 
 #homepage-top-banner a {
-	color: black;
+	color: rgba(79,79,79,.91);
+}
+
+@media (min-width: 765px) {
+	#homepage-top-banner a {
+		padding-left: 2px;
+		padding-right: 2px;
+	}
 }
