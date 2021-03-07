@@ -1,9 +1,9 @@
 #homepage-top-banner {
-	top: 0px;
-	font-size: 14px;
-	padding: 10px;
 	font-family: Montserrat,Arial,Helvetica,sans-serif;
+	font-size: 14px;
 	font-weight: 400;
+	padding: 10px;
+	top: 0px;
 }
 
 #homepage-top-banner a {
@@ -12,6 +12,7 @@
 
 @media (min-width: 765px) {
 	#homepage-top-banner a {
+		letter-spacing: 2px;
 		padding-left: 2px;
 		padding-right: 2px;
 	}
