@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 // ----------------------------
 
 Route::get('/', 'MiscWebController@getIndex');
-Route::get('/1', 'MiscWebController@get1');
+Route::get('/contact', 'MiscWebController@getContact');
 Route::post('/contact-form', 'MiscWebController@postContactForm');
 Route::get('/contact-form-confirmation', 'MiscWebController@getContactFormConfirmation');
 

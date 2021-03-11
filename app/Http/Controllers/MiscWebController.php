@@ -12,12 +12,12 @@ class MiscWebController extends Controller
 {
     public function getIndex()
     {
-		return view('welcome');
+        return view('home-page');
     }
 
-    public function get1()
+    public function getContact()
     {
-    	return view('home-page');
+        return view('contact');
     }
 
     public function getContactFormConfirmation()
