@@ -37,6 +37,6 @@ class MiscWebController extends Controller
                 ->bcc('robert.anderson.fl@gmail.com')
                 ->send($contact_form_email);
 
-    	return redirect()->to('/contact-form-confirmation');
+    	return redirect()->to('/contact-confirmation');
     }
 }

@@ -2,7 +2,6 @@
 <br>
 
 <p>{{$name}} says:</p>
-<br>
 
 <p><code>{!! nl2br(e($user_message)) !!}</code></p>
 <br>
