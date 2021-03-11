@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'MiscWebController@getIndex');
 Route::get('/contact', 'MiscWebController@getContact');
-Route::post('/contact-form', 'MiscWebController@postContactForm');
-Route::get('/contact-form-confirmation', 'MiscWebController@getContactFormConfirmation');
+Route::post('/contact', 'MiscWebController@postContact');
+Route::get('/contact-confirmation', 'MiscWebController@getContactConfirmation');
 
 // ----------------------------------
 // - AdminAlbumWebController routes -

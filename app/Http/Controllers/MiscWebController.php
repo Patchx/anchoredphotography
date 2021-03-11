@@ -20,12 +20,12 @@ class MiscWebController extends Controller
         return view('contact');
     }
 
-    public function getContactFormConfirmation()
+    public function getContactConfirmation()
     {
-    	return view('contact-form-confirmation');
+    	return view('contact-confirmation');
     }
 
-    public function postContactForm(Request $request)
+    public function postContact(Request $request)
     {        
         $contact_form_email = new SendContactFormEmail([
             'name' => $request->name,

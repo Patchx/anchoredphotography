@@ -10,7 +10,7 @@
     >
         <div>
             <form
-                action="/contact-form"
+                action="/contact"
                 method="POST"
             >
                 @csrf

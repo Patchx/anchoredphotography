@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    {{-- <link rel="stylesheet" href="css/style.css"> --}}
+    <link rel="stylesheet" href="{{ mix('/wp/css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('/wp/css/homepage.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@400;700&family=Raleway:wght@300;400&family=Rubik:wght@300;400;500">
 
     <title>Anchored Photography</title>
 </head>
@@ -24,7 +29,7 @@
         }
 
         .header {
-            background-color: #0069D9;
+            background-color: #17a2b8;
             padding: 20px;
         }
 
@@ -40,7 +45,7 @@
                 <div class="col-12">
                     <a 
                         @guest
-                            href="/1"
+                            href="/"
                         @else
                             href="/dashboard"
                         @endguest
