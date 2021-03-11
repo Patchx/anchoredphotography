@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     {{-- <link rel="stylesheet" href="css/style.css"> --}}
     <link rel="stylesheet" href="{{ mix('/wp/css/app.css') }}">
@@ -80,11 +80,37 @@
         </div>
     </div>
 
-    <div class="container-fluid copy">
-        <div class="col-12">
-            <p style="margin-bottom:5px">&copy; 2020 Anchored Photography FL. All rights Reserved.</p>
+    <div 
+        id="footer"
+        class="text-center"
+    >
+        <div class="col-lg-12">
+            <div class="mb-10">
+                <a 
+                    href="https://facebook.com/AnchoredPhotographybyRachel"
+                    class="mr-10"
+                >
+                    <i class="fab fa-facebook-f"></i>
+                </a>
 
-            <p>Design by <a href="https://www.linkedin.com/in/robertandersonfl/">Rob Anderson</a> and <a href="https://freehtml5.co" target="_blank">FreeHTML5.co</a>.</p>
+                <a 
+                    href="https://instagram.com/anchoredphotographyFL"
+                >
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+            </div>
+
+            <div><a 
+                href="mailto:anchoredphotographyFL@gmail.com"
+            >anchoredphotographyFL@gmail.com</a></div>
+
+            <div><a 
+                href="tel:561-502-9176"
+            >561-502-9176</a></div>
+
+            <p 
+                class="mt-15 mb-0"
+            >&copy; 2021 Anchored Photography FL. All rights Reserved.</p>
         </div>
     </div>
 </body>

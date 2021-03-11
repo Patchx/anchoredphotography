@@ -54,7 +54,7 @@
 				<div class="input-group-append">
 					<button
 						type="submit"
-						class="btn btn-primary d-inline-block"
+						class="btn btn-info d-inline-block"
 					>Go</button>
 				</div>
 			</div>
