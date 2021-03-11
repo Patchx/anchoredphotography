@@ -1,44 +1,43 @@
-@extends('layouts.default-layout')
+@extends('layouts.admin-layout')
 
 @section('content')
-<h1 class="text-center">Create Album</h1>
+	<h1 class="text-center">Create Album</h1>
 
-<br>
+	<br>
 
-@if(session()->has('msg_failure'))
-    <p 
-    	class="alert alert-danger text-center mx-auto"
-    	style="max-width:250px"
-    >{{session('msg_failure')}}</p>
+	@if(session()->has('msg_failure'))
+	    <p 
+	    	class="alert alert-danger text-center mx-auto"
+	    	style="max-width:250px"
+	    >{{session('msg_failure')}}</p>
 
-    <br>
-@endif
+	    <br>
+	@endif
 
-<h4 class="text-center">Album Name:</h4>
-<br>
+	<h4 class="text-center">Album Name:</h4>
+	<br>
 
-<div 
-	class="text-center mx-auto"
-	style="max-width:300px"
->
-	<form
-		method="POST"
-		action="/admin/album/create"
+	<div 
+		class="text-center mx-auto"
+		style="max-width:300px"
 	>
-		@csrf
-		
-		<input 
-			name="album_name"
-			class="form-control"
-			maxlength="100" 
-		/>
-		<br>
+		<form
+			method="POST"
+			action="/admin/album/create"
+		>
+			@csrf
+			
+			<input 
+				name="album_name"
+				class="form-control"
+				maxlength="100" 
+			/>
+			<br>
 
-		<button 
-			type="submit"
-			class="btn btn-primary" 
-		>Create</button>
-	</form>
-</div>
-
+			<button 
+				type="submit"
+				class="btn btn-primary" 
+			>Create</button>
+		</form>
+	</div>
 @endsection
