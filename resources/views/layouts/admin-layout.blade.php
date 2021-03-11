@@ -11,7 +11,7 @@
 
     {{-- <link rel="stylesheet" href="css/style.css"> --}}
     <link rel="stylesheet" href="{{ mix('/wp/css/app.css') }}">
-    <link rel="stylesheet" href="{{ mix('/wp/css/homepage.css') }}">
+    <link rel="stylesheet" href="{{ mix('/wp/css/styles.css') }}">
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@400;700&family=Raleway:wght@300;400&family=Rubik:wght@300;400;500">
 

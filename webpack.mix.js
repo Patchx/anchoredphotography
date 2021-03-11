@@ -16,7 +16,7 @@ const mix = require('laravel-mix');
 // --------
 
 mix.sass('resources/sass/app.scss', 'public/wp/css').version();
-mix.sass('resources/sass/homepage.scss', 'public/wp/css').version();
+mix.sass('resources/sass/styles.scss', 'public/wp/css').version();
 
 // ------
 // - JS -
