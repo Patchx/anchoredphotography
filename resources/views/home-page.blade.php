@@ -1,4 +1,4 @@
-@extends('layouts.homepage-layout')
+@extends('layouts.marketing-layout')
 
 @section('content')
     <div 
