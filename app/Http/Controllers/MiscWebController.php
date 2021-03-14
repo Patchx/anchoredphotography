@@ -12,7 +12,23 @@ class MiscWebController extends Controller
 {
     public function getIndex()
     {
-        return view('home-page');
+        $top_image_urls = [
+            'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615759807/anchoredphotographyfl/family_1.jpg',
+            'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615759785/anchoredphotographyfl/family_2.jpg',
+            'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615759769/anchoredphotographyfl/family_3.jpg',
+            'images/main_page/maternity_1.jpg',
+        ];
+
+        $data = [
+            'top_image_urls' => $top_image_urls,
+        ];
+
+        return view('home-page', $data);
+    }
+
+    public function getAbout()
+    {
+        return view('about');
     }
 
     public function getContact()

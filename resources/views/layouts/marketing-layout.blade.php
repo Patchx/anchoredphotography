@@ -34,7 +34,7 @@
         >
             <span>
                 <a 
-                    href="#about-us"
+                    href="/about"
                 >ABOUT</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
