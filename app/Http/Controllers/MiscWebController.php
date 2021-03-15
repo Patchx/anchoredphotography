@@ -14,13 +14,21 @@ class MiscWebController extends Controller
     {
         $top_image_urls = [
             'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615759807/anchoredphotographyfl/family_1.jpg',
-            'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615759785/anchoredphotographyfl/family_2.jpg',
+            'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615759785/anchoredphotographyfl/wedding_1.jpg',
             'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615759769/anchoredphotographyfl/family_3.jpg',
-            'images/main_page/maternity_1.jpg',
+            'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615768165/anchoredphotographyfl/maternity_1.jpg',
+        ];
+
+        $bottom_image_urls = [
+            'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615768144/anchoredphotographyfl/kids_1.jpg',
+            'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615767833/anchoredphotographyfl/couple_1.jpg',
+            'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615759785/anchoredphotographyfl/family_2.jpg',
+            'https://res.cloudinary.com/lessondb/image/upload/q_auto,g_auto/v1615759827/anchoredphotographyfl/ring_1.jpg',
         ];
 
         $data = [
             'top_image_urls' => $top_image_urls,
+            'bottom_image_urls' => $bottom_image_urls,
         ];
 
         return view('home-page', $data);

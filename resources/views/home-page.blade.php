@@ -1,21 +1,13 @@
 @extends('layouts.marketing-layout')
 
 @section('content')
-    <div 
-        style="
-            width: 100.3%;
-        "
-    >
+    <div class="full-images-banner">
         @foreach($top_image_urls as $url)
             <div
+                class="image-div"
                 style="
                     background: center no-repeat url({{ $url }});
                     background-size: cover;
-                    display: inline-block;
-                    height: 400px;
-                    margin: 0px;
-                    padding: 0px;
-                    width: 24.6%;
                 "
             /></div>
         @endforeach
@@ -47,5 +39,17 @@
                 consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
                 dolore magnam aliquam quaerat voluptatem.</p>
         </div>
+    </div>
+
+    <div class="full-images-banner">
+        @foreach($bottom_image_urls as $url)
+            <div
+                class="image-div"
+                style="
+                    background: center no-repeat url({{ $url }});
+                    background-size: cover;
+                "
+            /></div>
+        @endforeach
     </div>
 @endsection
