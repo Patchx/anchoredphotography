@@ -16,7 +16,7 @@
     <div 
         class="mx-auto"
         style="
-            padding: 50px;
+            padding: 40px;
             max-width: 700px;
         "
     >
@@ -41,15 +41,44 @@
         </div>
     </div>
 
-    <div class="full-images-banner">
-        @foreach($bottom_image_urls as $url)
-            <div
-                class="image-div"
-                style="
-                    background: center no-repeat url({{ $url }});
-                    background-size: cover;
-                "
-            /></div>
-        @endforeach
+    <div 
+        id="carouselExampleControls" 
+        class="carousel slide mx-auto"
+        data-ride="carousel"
+        data-interval="3000"
+        style="max-width:400px"
+    >
+        <div class="carousel-inner">
+            @foreach($bottom_image_urls as $url)
+                <div 
+                    @if ($loop->first)
+                        class="carousel-item active"
+                    @else
+                        class="carousel-item"
+                    @endif
+                >
+                    <div
+                        style="
+                            background: center no-repeat url({{ $url }});
+                            background-size: cover;
+                            width: 100%;
+                            height: 400px;
+                        "
+                    /></div>
+                </div>
+            @endforeach
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+
+    <div style="height:40px"></div>
 @endsection
