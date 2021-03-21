@@ -102,9 +102,9 @@
 
             <p 
                 class="mt-15 mb-0"
-            >&copy; 2021 Anchored Photography FL. All rights Reserved.</p>
+            >&copy; 2021 Anchored Photography FL. All rights Reserved</p>
 
-            <p style="margin-bottom:0px">Design by <a href="https://www.linkedin.com/in/robertandersonfl/">Rob Anderson</a> and <a href="https://freehtml5.co" target="_blank">FreeHTML5.co</a>.</p>
+            <p style="margin-bottom:0px">Design by <a href="https://www.linkedin.com/in/robertandersonfl/">Rob Anderson</a></p>
         </div>
     </div>
 
