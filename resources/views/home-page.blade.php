@@ -24,20 +24,17 @@
             <br>
             <h2
                 class="mb-20 text-center"
-            >Title here</h2>
+            >Hi, I’m Rachel the owner of Anchored Photography Florida</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
-                ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                dolore magnam aliquam quaerat voluptatem.</p>
+            <p>I am a natural light photographer based on the Treasure Coast of Florida. I’m a native Floridian who grew up in South Florida, so I know the area well... which is always a plus! I love photographing everything from engagements to maternity, family lifestyle sessions to your babies graduating and everything in between! I have a passion for creating relationships with my clients and bringing their visions to life. There are so many amazing milestones in life, and I feel super grateful that my clients trust me to preserve those moments through photography.</p>
+
+            <p>I am so excited to be a part of your journey and capture moments to last you a lifetime!</p>
+
+            <p>When I'm not spending time behind my camera or my computer editing, I am a wife and momma to one fur baby! My hubby and I are on our TTC journey (fertility journey to start a family), and we are eager to see what life has in store for us. I have been a special education teacher for a decade and love working with kids! It’s definitely at the heart of what I do each and every day. When I’m not working, you can usually find me jamming out to music in my car, binge watching a Netflix show, or hanging out with friends at local spots around town.</p>
+
+            <p>When you book a session with me, prepare for lots of laughter and making awkward moments magical! (Yes, we all know it can feel awkward to stand in front of the camera.) My ultimate goal when we are together is to capture YOU, and all that makes you and yours who you are. I will do some directing to help you look amazing, but I also know when to step back and catch candid moments. I love to capture candid moments that are perfectly you and capture your vision. My heartfelt hope is to preserve the love, laughter, and all of the moments to last you a lifetime. I will be by your side each step of the way and always just a call or email away. By the end of our time together, my hope is that you feel more like a friend than a client.</p>
+
+            <p>I can’t wait to meet you and share some of the most special moments with you and your loved ones!</p>
         </div>
     </div>
 

@@ -63,8 +63,8 @@
 
             <span>
                 <a 
-                    href="#portfolio"
-                >PORTFOLIO</a>
+                    href="/packages"
+                >PACKAGES</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
         </div>

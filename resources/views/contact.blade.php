@@ -14,6 +14,7 @@
                 method="POST"
             >
                 @csrf
+                @honeypot
 
                 <h4 class="mb-10 text-center">Contact Me</h4>
 
