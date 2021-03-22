@@ -24,7 +24,7 @@
             <br>
             <h2
                 class="mb-20 text-center"
-            >Hi, I’m Rachel the owner of Anchored Photography Florida</h2>
+            >Hi, I’m Rachel Aubrey, the owner of Anchored Photography Florida</h2>
 
             <p>I am a natural light photographer based on the Treasure Coast of Florida. I’m a native Floridian who grew up in South Florida, so I know the area well... which is always a plus! I love photographing everything from engagements to maternity, family lifestyle sessions to your babies graduating and everything in between! I have a passion for creating relationships with my clients and bringing their visions to life. There are so many amazing milestones in life, and I feel super grateful that my clients trust me to preserve those moments through photography.</p>
 
