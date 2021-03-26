@@ -149,7 +149,7 @@
 
                 <div 
                     class="text-center"
-                    style="width:550px"
+                    style="max-width:550px"
                 >
                     <p>Travel fees for outside of designated locations <br>(starting at $25+; depending on location distance)</p>
 
