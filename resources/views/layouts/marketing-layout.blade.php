@@ -56,8 +56,8 @@
 
             <span>
                 <a 
-                    href="#news"
-                >NEWS</a>
+                    href="/calendar/schedule"
+                >BOOK NOW</a>
                 &nbsp;&nbsp;&nbsp;
             </span>
 
