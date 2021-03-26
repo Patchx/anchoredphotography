@@ -23,6 +23,7 @@ Route::get('/about', 'MiscWebController@getAbout');
 Route::get('/contact', 'MiscWebController@getContact');
 Route::post('/contact', 'MiscWebController@postContact')->middleware(ProtectAgainstSpam::class);
 Route::get('/contact-confirmation', 'MiscWebController@getContactConfirmation');
+Route::get('/packages', 'MiscWebController@getPackages');
 
 // ----------------------------------
 // - AdminAlbumWebController routes -

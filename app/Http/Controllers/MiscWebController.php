@@ -50,6 +50,11 @@ class MiscWebController extends Controller
     	return view('contact-confirmation');
     }
 
+    public function getPackages()
+    {
+        return view('packages');
+    }
+
     public function postContact(Request $request)
     {        
         $contact_form_email = new SendContactFormEmail([
