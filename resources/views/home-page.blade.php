@@ -1,5 +1,33 @@
 @extends('layouts.marketing-layout')
 
+@section('head-unique')
+
+    <style>
+        .testimonial {
+            text-align: center;
+            padding: 45px 50px 45px 70px;
+            margin: 30px 15px 35px;
+            background: #f9f9f9;
+            position: relative;
+        }
+        .testimonial .description {
+            font-size: 20px;
+            color: #757575;
+            line-height: 27px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .testimonial .title {
+            display: inline-block;
+            font-size: 18px;
+            color: #4a5184;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    </style>
+@endsection
+
 @section('content')
     <div class="full-images-banner">
         @foreach($top_image_urls as $url)
@@ -25,16 +53,40 @@
             <h2
                 class="mb-20 text-center"
             >Hi, I’m Rachel Aubrey, the owner of Anchored Photography Florida</h2>
+            <br>
 
             <p>I am a natural light photographer based on the Treasure Coast of Florida. I’m a native Floridian who grew up in South Florida, so I know the area well... which is always a plus! I love photographing everything from engagements to maternity, family lifestyle sessions to your babies graduating and everything in between! I have a passion for creating relationships with my clients and bringing their visions to life. There are so many amazing milestones in life, and I feel super grateful that my clients trust me to preserve those moments through photography.</p>
+        </div>
 
-            <p>I am so excited to be a part of your journey and capture moments to last you a lifetime!</p>
-
-            <p>When I'm not spending time behind my camera or my computer editing, I am a wife and momma to one fur baby! My hubby and I are on our TTC journey (fertility journey to start a family), and we are eager to see what life has in store for us. I have been a special education teacher for a decade and love working with kids! It’s definitely at the heart of what I do each and every day. When I’m not working, you can usually find me jamming out to music in my car, binge watching a Netflix show, or hanging out with friends at local spots around town.</p>
-
-            <p>When you book a session with me, prepare for lots of laughter and making awkward moments magical! (Yes, we all know it can feel awkward to stand in front of the camera.) My ultimate goal when we are together is to capture YOU, and all that makes you and yours who you are. I will do some directing to help you look amazing, but I also know when to step back and catch candid moments. I love to capture candid moments that are perfectly you and capture your vision. My heartfelt hope is to preserve the love, laughter, and all of the moments to last you a lifetime. I will be by your side each step of the way and always just a call or email away. By the end of our time together, my hope is that you feel more like a friend than a client.</p>
-
-            <p>I can’t wait to meet you and share some of the most special moments with you and your loved ones!</p>
+        <div class="row">
+            <div id="testimonial-slider">
+                <div class="testimonial">
+                    <p class="description">
+                        Rachel is great! But this is just example text!
+                    </p>
+                    <div class="testimonial-profile">
+                        <h3 class="title">John Doe</h3>
+                    </div>
+                </div>
+ 
+                <div class="testimonial">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
+                    </p>
+                    <div class="testimonial-profile">
+                        <h3 class="title">Kristina</h3>
+                    </div>
+                </div>
+ 
+                <div class="testimonial">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
+                    </p>
+                    <div class="testimonial-profile">
+                        <h3 class="title">Steve Thomas</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@400;700&family=Raleway:wght@300;400&family=Rubik:wght@300;400;500">
 
     <title>Anchored Photography</title>
+
+    @yield('head-unique')
 </head>
 
 <body>
